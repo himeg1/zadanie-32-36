@@ -1,0 +1,38 @@
+p#pogrubienie_patej {
+ font-size: 30px;
+ color: #8264c8;
+ font-weight: bold;
+}
+
+p#pochylona_patej {
+ font-size: 35pt;
+ color: #e47669;
+ font-style: italic;
+}
+
+p#index_gorny_patej {
+ font-size: 1cm;
+ color: #94645f;
+ vertical-align: super;
+}
+
+p#index_dolny_patej {
+ font-size: 1.5cm;
+ color: rgb(50%, 100%, 94%);
+ vertical-align: sub;
+}
+
+p#mono_patej {
+ font-size: 40px;
+ color: #2dc85a;
+ font-family: monospace;
+}
+
+p#powiekszenie_patej {
+ color: #5c34ae; 
+ font-size: larger;
+}
+
+p#pomniejszenie_patej {
+ color: rgb(71%, 65%, 55%); 
+ font-size: smaller;

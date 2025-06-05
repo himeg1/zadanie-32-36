@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opis Zewnętrznych Arkuszy Stylów</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 24px;
+            color: black;
+        }
+        p {
+            font-size: 16px;
+            color: black;
+        }
+        ol {
+            font-size: 16px;
+            color: black;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            margin-top: 10px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: white;
+        }
+        pre {
+            font-family: "Courier New", Courier, monospace;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Pytania w nagłówkach H1 -->
+    <h1>1. Składnia teoretyczna </h1>
+    <table>
+        <tr>
+            <td>
+                <textarea rows="5" cols="40">
+&lt;head&gt;
+    &lt;link rel="Stylesheet" type="text/css" href="style.css" /&gt;
+&lt;/head&gt;
+                </textarea>
+            </td>
+        </tr>
+    </table>
+
+    <h1>2. Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz ile razy może on występować w dokumencie?</h1>
+    <p>Styl zewnętrzny wstawiany jest w części nagłówkowej dokumentu, pomiędzy znacznikami <code>&lt;head&gt;</code> a <code>&lt;/head&gt;</code>. Znak <code>&lt;link&gt;</code> odpowiada za dołączenie zewnętrznego arkusza stylów. Można dołączyć dowolną liczbę takich arkuszy w dokumencie.</p>
+
+    <h1>3. Jak jest najprostsza forma wstawiania stylu zewnętrznego?</h1>
+    <table>
+        <tr>
+            <td>
+                <textarea rows="5" cols="40">
+&lt;head&gt;
+    &lt;link rel="Stylesheet" type="text/css" href="style.css" /&gt;
+&lt;/head&gt;
+               </textarea>
+            </td>
+        </tr>
+    </table>
+
+    <h1>4. Ile arkuszy stylów może być dołączanych do jednego dokumentu HTML oraz jaka zasada musi być zachowana przy większej ilości dołączanych styli?</h1>
+    <p>Można dołączyć dowolną liczbę arkuszy stylów. Ważne jest, aby pamiętać, że w przypadku konfliktów, ważniejsze będą deklaracje z arkusza dołączonego później.</p>
+
+    <h1>5. Co się dzieje w przypadku konfliktów?</h1>
+    <p>W przypadku konfliktów, gdy te same style są definiowane w różnych arkuszach stylów, ważniejsze będą te deklaracje, które pochodzą z arkusza dołączonego później.</p>
+
+    <h1>6. Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?</h1>
+    <p>Pliki arkuszy stylów tworzy się w zwykłym edytorze tekstowym, zapisując je z rozszerzeniem .css. Edytor tekstowy pozwala na łatwą edycję prostych arkuszy stylów.</p>
+
+    <h1>7. Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?</h1>
+    <p>Specjalny edytor CSS jest dedykowanym narzędziem do tworzenia i edytowania arkuszy stylów. Ułatwia on zarządzanie kodem CSS dzięki podświetleniu składni oraz oferuje dodatkowe funkcje pomocnicze.</p>
+
+    <h1>8. Jakie rozszerzenie posiada plik będący zewnętrznym arkuszem stylów?</h1>
+    <p>Plik zewnętrznego arkusza stylów ma rozszerzenie .css (np. <code>style.css</code>).</p>
+
+    <h1>9. Jakie są zalety zewnętrznego arkusza stylów?</h1>
+    <ol>
+        <li>Wszystkie strony w obrębie całego serwisu mogą mieć wspólne cechy, co pozwala na spójny wygląd całej witryny.</li>
+        <li>Zmiana stylu, np. czcionki na wszystkich stronach, jest możliwa poprzez modyfikację jednego arkusza, bez konieczności zmiany każdego dokumentu osobno.</li>
+    </ol>
+
+    <h1>10. Uwagi na temat pisania w CSS</h1>
+    <p>W CSS należy pamiętać o poprawnym formatowaniu, wcięciach oraz o tym, aby unikać zbędnych deklaracji, które mogą wprowadzać chaos w stylach. Warto także dbać o czytelność kodu i zachować spójność w nazewnictwie klas oraz selektorów.</p>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodzaje Selektorów</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        h1 {
+            font-size: 24px;
+            color: black;
+            font-weight: bold;
+        }
+        p {
+            font-size: 16px;
+            color: black;
+        }
+        ol {
+            font-size: 16px;
+            color: black;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Nagłówek z pytaniem -->
+    <h1>1. Jakie są rodzaje selektorów w CSS?</h1>
+
+    <!-- Odpowiedź na pytanie -->
+    <ol>
+        <li><b>Selektory podstawowe:</b>
+            <ul>
+                <li><b>Selektor elementu:</b> Dotyczy konkretnego elementu HTML. Przykład: p, h1, div.</li>
+                <li><b>Selektor klasy:</b> Dotyczy elementów z określoną klasą. Przykład: .moja-klasa.</li>
+                <li><b>Selektor identyfikatora:</b> Dotyczy elementów z określonym identyfikatorem. Przykład: #moj-id.</li>
+            </ul>
+        </li>
+        
+        <li><b>Selektory złożone:</b>
+            <ul>
+                <li><b>Selektor grupujący:</b> Łączy selektory, aby zastosować te same style do wielu elementów. Przykład: p, h1, .moja-klasa.</li>
+                <li><b>Selektor potomków:</b> Dotyczy elementów będących potomkami innych elementów. Przykład: div p – wszystkie akapity w obrębie elementu div.</li>
+                <li><b>Selektor sąsiadów:</b> Dotyczy elementu, który znajduje się bezpośrednio po innym elemencie. Przykład: h1 + p – pierwszy p po h1.</li>
+            </ul>
+        </li>
+        
+        <li><b>Selektory zaawansowane:</b>
+            <ul>
+                <li><b>Selektor atrybutu:</b> Dotyczy elementów z określonym atrybutem. Przykład: [type="text"] – elementy input z atrybutem type="text".</li>
+                <li><b>Selektor pseudo-klasy:</b> Dotyczy elementów w określonym stanie. Przykład: :hover – elementy, nad którymi znajduje się kursor.</li>
+                <li><b>Selektor pseudo-elementu:</b> Dotyczy części elementu, np. jego pierwszej litery, linii. Przykład: ::first-letter – pierwsza litera w elemencie p.</li>
+            </ul>
+        </li>
+    </ol>
+
+</body>
+</html>

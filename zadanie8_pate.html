@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wewnętrzny Arkusz Stylów</title>
+    <style type="text/css">
+       
+        h1 {
+            color: black;
+            font-size: 24px;
+        }
+        p {
+            color: green;
+            font-size: 16px;
+        }
+       
+       
+    </style>
+</head>
+<body>
+
+    <h1>1. Czym jest wewnętrzny arkusz stylów?</h1>
+
+    
+    <ol>
+        <li>Wewnętrzny arkusz stylów wstawiany jest w części nagłówkowej dokumentu, pomiędzy znacznikami <code>&lt;head&gt;</code> a <code>&lt;/head&gt;</code>.</li>
+        <li>Składnia teoretyczna wewnętrznego arkusza stylów:</li>
+    </ol>
+
+    <!-- Ramka z definicją składni -->
+    <table>
+        <tr>
+            <td>
+                <textarea rows="10" cols="50">
+&lt;head&gt;
+    &lt;style type="text/css"&gt;
+       
+        selektor1 { cecha: wartość; cecha2: wartość2... }
+        selektor2 { cecha: wartość; cecha2: wartość2... }
+       
+    &lt;/style&gt;
+&lt;/head&gt;
+               </textarea>
+            </td>
+        </tr>
+    </table>
+
+    <ol start="3">
+        <li>Selektorem może być praktycznie dowolny znacznik, np. <code>p</code> (akapit), <code>h1</code> (nagłówek), <code>td</code> (komórka tabeli) i inne. To właśnie elementom znajdującym się pomiędzy tymi znacznikami nadajemy atrybuty formatowania.</li>
+        <li>Jako "cecha" (w deklaracji stylu) należy wpisać konkretne atrybuty formatowania, np. <code>color</code>, <code>font-size</code>, <code>background-color</code>, itp.</li>
+        <li>Wartością dla danej cechy należy wpisać odpowiednią wartość, np. <code>red</code>, <code>blue</code>, <code>#31F4A5</code>, itd. Jednemu selektorowi możemy nadać kilka atrybutów, które są rozdzielone średnikami.</li>
+    </ol>
+
+</body>
+</html>

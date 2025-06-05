@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela o ID w HTML</title>
+  <style>
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 2px solid black;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+   
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <th>Pojęcie</th>
+      <th>Znaczenie pojęcia uzupełnia uczeń</th>
+    </tr>
+    <tr>
+      <td>Co znaczy skrót ID?</td>
+      <td>Skrót "ID" oznacza "identyfikator"</td>
+    </tr>
+    <tr>
+      <td>Jaki jest cel stosowania ID?</td>
+      <td>ID służy do wyróżnienia, żrównicowania podobnych elementów w kodzie</td>
+    </tr>
+    <tr>
+      <td>Jakie jest znaczenie znaku #</td>
+      <td>Znak "#" poprzedza nazwę identyfikatora w CSS, aby odwołać się do danego elementu.</td>
+    </tr>
+    <tr>
+      <td>Jak następuje wywołanie ID (wraz z wytłumaczeniem)?</td>
+      <td>Wywołanie identyfikatora to id="nazwa zdefiniowanego w CSS identyfikatora" czyli:
+Odpowiedni wpis składa się z selektora, do którego planujemy przypisać identyfikator, oraz z
+nazwy poprzedzonej znakiem #.</td>
+    </tr>
+    <tr>
+      <td>Uwagi na temat stosowania ID (trzy konieczne wyliczenia).</td>
+      <td>
+        1. ID może wystąpić tylko raz w całym dokumencie. <br>
+        2. Użycie tego samego ID wiele razy jest błędem, ale strona może dalej działać. <br>
+        3. Elementy oznaczone ID muszą być unikatowe, tzn., że na jednej stronie może
+wystąpić tylko 1 element z takim ID.. Jeśli nie mamy pewności, czy element wystąpi
+więcej niż raz to możemy bez obaw użyć 'class', które może być przypisane do
+nieskończenie wielu elementów na stronie.
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
+<!--Joachim Patej-->

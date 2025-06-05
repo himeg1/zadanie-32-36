@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Znaczniki HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .ramka {
+            border: 1px solid ;
+            padding: 10px;
+            background-color: white;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+<h1>1. Opis znacznika DIV</h1>
+<p>
+    Znacznik <code>&lt;div&gt;</code> to element blokowy używany do grupowania większych części zawartości strony.
+    Najczęściej stosuje się go do organizowania layoutu lub stylowania większych sekcji strony.
+</p>
+
+<div class="ramka">
+&lt;div align="center"&gt;<br>
+&nbsp;&nbsp;Treść wewnątrz diva<br>
+&lt;/div&gt;
+</div>
+
+<p><strong>Zastosowanie:</strong> organizacja układu strony, kontenery dla stylów CSS i JavaScriptu.</p>
+<p><strong>Atrybuty:</strong> id, class, style, align</p>
+<p><strong>Opis atrybutu ALIGN:</strong> Określa wyrównanie zawartości wewnątrz znacznika. Może przyjąć wartości: <code>left</code>, <code>center</code>, <code>right</code>.</p>
+
+<hr>
+
+<h1>2. Opis znacznika SPAN</h1>
+<p>
+    Znacznik <code>&lt;span&gt;</code> to element liniowy, służy do stylowania fragmentów tekstu lub małych elementów w obrębie innych elementów tekstowych.
+</p>
+
+<textarea rows="1" cols="80">
+<p>To jest <span style="color: red;">czerwony</span> tekst.</p>
+</textarea>
+
+<p><strong>Zastosowanie:</strong> stylizacja lub operacje JS na fragmentach tekstu bez przerywania układu akapitów itp.</p>
+
+<hr>
+
+<h1>3. Różnica między znacznikami DIV i SPAN</h1>
+<p>
+    <strong>DIV</strong> to element <strong>blokowy</strong> – zajmuje całą szerokość dostępnego miejsca i zaczyna się od nowej linii.<br>
+    <strong>SPAN</strong> to element <strong>liniowy</strong> – nie przerywa bieżącej linii tekstu i jest używany do zaznaczania małych fragmentów.
+</p>
+
+<hr>
+
+<h1>4.Opis elementów i tagów: 1) liniowe 2) blokowe 3) blokowo-liniowe</h1>
+
+<p>
+    <strong>Elementy liniowe:</strong> <code>span</code>, <code>a</code>, <code>strong</code>, <code>em</code>, <code>img</code>, <code>label</code><br>
+    <strong>Elementy blokowe:</strong> <code>div</code>, <code>p</code>, <code>section</code>, <code>header</code>, <code>footer</code>, <code>article</code>, <code>nav</code><br>
+    <strong>Elementy blokowo-liniowe:</strong> <code>button</code>, <code>input</code>, <code>textarea</code>, <code>select</code>
+</p>
+
+
+<textarea rows="9" cols="30">
+<style><br>
+przyklad { display: inline; } <br>
+kontener { display: block; } <br>
+mieszany { display: inline-block; } <br>
+
+</textarea>
+
+
+</body>
+</html>
+<!-- joachim patej  -->

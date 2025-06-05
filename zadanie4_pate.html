@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sposoby podłączania CSS</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: white;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+        b {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sposoby podłączania CSS do kodu strony WWW</h2>
+    
+    <table>
+        <tr>
+            <th><b>Zewnętrzny arkusz stylów</b></th>
+        </tr>
+        <tr>
+            <td><textarea readonly>&lt;<head> 
+<link rel="Stylesheet" type="text/css" href="style.css" /> 
+</head> "&gt;</textarea></td>
+        </tr>
+    </table>
+    
+    <table>
+        <tr>
+            <th><b>Styl lokalny (wpisany, liniowy, w linii)</b></th>
+        </tr>
+        <tr>
+            <td><textarea readonly>&lt;selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor&gt;</textarea></td>
+        </tr>
+    </table>
+    
+    <table>
+        <tr>
+            <th><b>Wewnętrzny arkusz stylów</b></th>
+        </tr>
+        <tr>
+            <td><textarea readonly>&lt;style&gt;
+<head> 
+<style type="text/css"> 
+selektor1 { cecha: wartość; cecha2: wartość2... } 
+selektor2 { cecha: wartość; cecha2: wartość2... } 
+</style> 
+</head>;</textarea></td>
+        </tr>
+    </table>
+    
+    <table>
+        <tr>
+            <th><b>Alternatywny arkusz stylów</b></th>
+        </tr>
+        <tr>
+            <td><textarea readonly>&lt;<head> 
+<link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" /> 
+<link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /> 
+<link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" /> 
+</head> ;</textarea></td>
+        </tr>
+    </table>
+    
+    <table>
+        <tr>
+            <th><b>Import arkusza stylów</b></th>
+        </tr>
+        <tr>
+            <td><textarea readonly>&lt;style&gt;
+<style type="text/css"> 
+@import url(adres zewnętrznego arkusza stylów); 
+</style>;</textarea></td>
+        </tr>
+    </table>
+</body>
+</html>

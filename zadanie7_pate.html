@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opis Stylów</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 24px;
+            color: black;
+        }
+        p {
+            font-size: 16px;
+            color: black;
+        }
+        ol {
+            font-size: 16px;
+            color: black;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        table {
+            border: 1px solid #000;
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        td {
+            padding: 15px;
+            font-size: 16px;
+            color: black;
+            white-space: pre-wrap; /* Pozwala na wyświetlanie spacji niełamanej */
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>1. Jakie są różnice między stylem lokalnym, liniowym i linijkowym?</h1>
+
+    <ol>
+        <li>Styl lokalny pozwala na nadanie formatowania konkretnemu pojedynczemu elementowi strony. Jest wstawiany w tej samej linii, w której znajduje się element formatowany. O tym, który to będzie element, decyduje słowo kluczowe "selektor".</li>
+
+        <!-- Zamiast drugiego punktu, dodano ramkę z definicją składni teoretycznej -->
+        <li>
+            
+<textarea rows="5" cols="40">
+                        &lt;selektor style="cecha1: wartość1; cecha2: wartość2; ..."&gt;...&lt;/selektor&gt;<br>
+                        lub inaczej<br>
+                        &lt;selektor style="nasze style"&gt;treść bloku&lt;/selektor&gt;
+</textarea>
+                  
+        </li>
+
+        <li>Selektorem może być praktycznie dowolny znacznik, np. p (akapit), h1 (nagłówek), td (komórka tabeli) i inne. To właśnie elementom znajdującym się pomiędzy tymi znacznikami, nadajemy atrybuty formatowania.</li>
+
+        <li>Jako "cecha" czy inaczej własność bądź właściwość (ang. "property") należy wpisać o jakie konkretnie atrybuty formatowania nam chodzi (np. kolor tekstu - color). Jednemu selektorowi możemy nadać kilka atrybutów (cech). Są one wtedy rozdzielone średnikami.</li>
+
+        <li>Jako wyraz "wartość" (w deklaracji stylu) wpisujemy dokładną wartość atrybutu (np. dla koloru tekstu będzie to: red, blue czy też #31F4A5 itd.). Wartość zależy ściśle od cechy, po której stoi w deklaracji.</li>
+    </ol>
+
+</body>
+</html>
+
